@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/527f71ab58.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Website</title>
+
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Ushnish</a></h1>
+      <nav class="nav-items">
+        <a id="about" href="#" class="nav-item active">About</a>
+        <a href="#" class="nav-item">Work</a>
+        <a href="#" class="nav-item">Skills</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+      </nav>
+    </header>
+    <section class="main">
+      <p class="section-title">&lt; about &gt;</p>
+      <div class="hero">
+        <p class="hero-text">
+          Hi !<br />I am <span id="name"> Ushnish Tapaswi </span><br />
+          <span>and I am a</span>
+          <br />
+          <span class="role"></span>
+          <button type="button" class="Download-CV" href="#bio">
+            Download C.V.<i class="fa fa-arrow-down"></i></button
+        >
+        </p>
+        <img src="images/Subject.png" id="main-image" height="500px" alt="" />
+        
+      </div>
+      <p class="section-title">&lt; /about &gt;</p>
+    </section>
+    <script>
+      var typed = new Typed('.role', {
+    strings: ["UI/UX Designer", "Frontend Developer"],
+    typeSpeed: 60,
+    backspeed: 150,
+    loop: true
+});
+    </script>
+  </body>
+</html>

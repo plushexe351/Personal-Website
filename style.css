@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;1,300;1,400&family=Source+Code+Pro:wght@400;600;700&display=swap");
+
+@font-face {
+  font-family: Monalisa;
+  src: url(monallesia-script/Monallesia/Monallesia\ Script.ttf);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  min-height: 100vh;
+}
+header {
+  font-family: "Source Code Pro",monospace;
+  padding: 18px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+nav a {
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-inline: 20px;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  color: white;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(208, 0, 255);
+  transition: 0.2s ease;
+}
+nav a:hover::before {
+  width: 70%;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 70%;
+  background-color: rgb(208, 0, 255);
+}
+.main {
+  font-family: Monalisa;
+  margin: 10px 0;
+  width: 100%;
+  min-height: 70vh;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-inline: 50px;
+  gap: 50px;
+  justify-content: space-around;
+  height: 100%;
+}
+.main .hero-text {
+  position: relative;
+  top: 0;
+  width: 800px;
+  overflow: hidden;
+  font-size: 28px;
+  color: white;
+  animation: textappear 0.5s ease;
+}
+.section-title {
+  margin-left: 150px;
+  color: rgba(255, 255, 255, 0.321);
+  font-size: 1.3rem;
+}
+#name,
+.role {
+  position: relative;
+  font-family: "Source Code Pro",monospace;
+  font-size: 60px;
+  color: rgb(208, 0, 255);
+}
+#main-image {
+  filter: drop-shadow(-20px -20px 0 rgb(208, 0, 255));
+}
+
+.Download-CV{
+all: unset;
+display: block;
+font-family: "Source code pro",monospace;
+height: 40px;
+margin-top:20px;
+border: 1px solid white;
+padding: 0px 20px;
+font-size: 1rem;
+border-radius: 60px;
+cursor: pointer;
+transition: 0.1s;
+}
+.fa-arrow-down {
+opacity: 0;
+color: white;
+height: 10px;
+margin-left: -10px;
+transition: 0.2s ease;
+transform: rotate(-90deg);
+}
+.typed-cursor{
+  background-color:rgb(208, 0, 255);
+}
+button:hover > .fa-arrow-down {
+opacity: 1;
+margin-left: 10px;
+transform: unset;
+}
+@keyframes textappear {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
