@@ -11,15 +11,20 @@
 
   </head>
   <body>
-    <header>
-      <h1><a href="#">Ushnish</a></h1>
+    <header id = "home">
+      <h1><a href="#home" id = "developer-name">Ushnish</a></h1>
       <nav class="nav-items">
-        <a id="about" href="#" class="nav-item active">About</a>
-        <a href="#" class="nav-item">Work</a>
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About</a>
         <a href="#" class="nav-item">Skills</a>
+        <a href="#" class="nav-item">Work</a>
         <a href="#" class="nav-item">Services</a>
         <a href="#" class="nav-item">Contact</a>
       </nav>
+      <div class="hamburg">
+        <div class="bar top"></div>
+        <div class="bar bottom"></div>
+      </div>
     </header>
     <section class="main">
       <p class="section-title">&lt; about &gt;</p>
@@ -33,18 +38,22 @@
             Download C.V.<i class="fa fa-arrow-down"></i></button
         >
         </p>
-        <img src="images/Subject.png" id="main-image" height="500px" alt="" />
+        <img src="images/Subject.png" id="main-image" height="500px" alt="" data-speed="-5" />
         
       </div>
       <p class="section-title">&lt; /about &gt;</p>
     </section>
-    <script>
-      var typed = new Typed('.role', {
-    strings: ["UI/UX Designer", "Frontend Developer"],
-    typeSpeed: 60,
-    backspeed: 150,
-    loop: true
-});
-    </script>
+    <script src="script.js"></script>
+  
+// const layer = document.querySelector("#main-image");
+// document.addEventListener("mousemove",parallax);
+// function parallax(e){
+//   const speed = layer.getAttribute('data-speed');
+//   const x = (window.innerWidth - e.pageX*speed)/100;
+//   const y = (window.innerHeight - e.pageY*speed)/100;
+
+//   layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+// }
+
   </body>
 </html>

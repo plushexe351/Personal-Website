@@ -4,6 +4,9 @@
   font-family: Monalisa;
   src: url(monallesia-script/Monallesia/Monallesia\ Script.ttf);
 }
+::selection{
+  background-color: transparent;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -21,29 +24,37 @@ body {
 }
 header {
   font-family: "Source Code Pro",monospace;
-  padding: 18px 50px;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 18px 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: space-evenly;
-  gap: 20px;
   align-items: center;
+  z-index: 999;
+  transition: 0.2s ease;
+  overflow: hidden;
 }
 nav {
   display: flex;
+  overflow-x: hidden;
 }
+
+
 header a {
   color: white;
   text-decoration: none;
 }
 nav a {
+  display: block;
   position: relative;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px;
   padding-inline: 20px;
-  transition: 0.3s ease;
 }
 nav a:hover {
   color: white;
@@ -60,7 +71,7 @@ nav a::before {
 nav a:hover::before {
   width: 70%;
 }
-.active::before {
+nav a.active::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -68,9 +79,36 @@ nav a:hover::before {
   width: 70%;
   background-color: rgb(208, 0, 255);
 }
+.hamburg{
+  display: none;
+  position: fixed;
+  top:35px;
+  right:5vw;
+  height:max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.bar{
+  height:2px;
+  width:20px;
+  margin-bottom:5px;
+  background-color: white;
+  transition: 0.2s ease;
+}
+.hamburg:hover .bottom{
+  transform: translate(6px ,0);
+}
+.hamburg:hover .top{
+  transform: translate(-6px,0);
+}
+
+section{
+  position: relative;
+  top:80px;
+}
 .main {
   font-family: Monalisa;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   width: 100%;
   min-height: 70vh;
 }
@@ -105,7 +143,7 @@ nav a:hover::before {
   color: rgb(208, 0, 255);
 }
 #main-image {
-  filter: drop-shadow(-20px -20px 0 rgb(208, 0, 255));
+  filter: drop-shadow(-10px -10px 0 rgb(208, 0, 255));
 }
 
 .Download-CV{
@@ -147,3 +185,36 @@ transform: unset;
   }
 }
 
+@media only screen and (max-width:1000px){
+  nav{
+    display: block;
+    
+    height: 0;
+    width:100%;
+    transition: 0.2s ease;
+  }
+  header{
+    background-color: rgba(0, 0, 0, 0.435);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+  header.active nav{
+    height:100vh;
+  }
+  header.active .hamburg .bar.top{
+    transform: rotate(45deg);
+  }
+  header.active .hamburg .bar.bottom{
+    margin-bottom: 0;
+    transform: rotate(-45deg)
+    translate(4px,-6px);
+  }
+  .hamburg{
+    display: block;
+  }
+  nav a {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top:20px;
+  }
+}
