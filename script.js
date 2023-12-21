@@ -74,20 +74,20 @@ window.addEventListener('scroll', () => {
 })
 
 
-window.addEventListener('resize', () => {
+// window.addEventListener('resize', () => {
 
-    if (window.innerWidth < 900) {
-        keyFeatures.forEach(each => {
-            each.classList.add('hidden');
-        })
+//     if (window.innerWidth < 900) {
+//         keyFeatures.forEach(each => {
+//             each.classList.add('hidden');
+//         })
 
-    }
-    else {
-        keyFeatures.forEach(each => {
-            each.classList.remove('hidden');
-        })
-    }
-})
+//     }
+//     else {
+//         keyFeatures.forEach(each => {
+//             each.classList.remove('hidden');
+//         })
+//     }
+// })
 
 toggleSeeMore.forEach(toggle => {
     toggle.addEventListener('click', () => {
@@ -97,7 +97,7 @@ toggleSeeMore.forEach(toggle => {
         if (!toggle.classList.contains('active'))
             hiddenSection.classList.add('hidden');
         else
-            hiddenSection?.classList.remove('hidden');
+            hiddenSection.classList.remove('hidden');
     })
 })
 

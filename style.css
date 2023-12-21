@@ -398,7 +398,6 @@ section {
 }
 
 .toggle-see-more {
-  display: none;
   width: max-content;
   margin: 1rem auto;
 }
@@ -546,9 +545,9 @@ section {
     justify-content: center;
   }
 
-  .toggle-see-more {
+  /* .toggle-see-more {
     display: block;
-  }
+  } */
 
 
   nav .download-CV {
