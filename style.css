@@ -303,11 +303,15 @@ section {
 }
 
 .javascript .progress {
-  width: 65%;
+  width: 75%;
 }
 
 .php .progress {
   width: 45%;
+}
+
+.python .progress {
+  width: 70%;
 }
 
 .scss .progress {
