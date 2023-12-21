@@ -194,7 +194,6 @@ section {
 }
 
 .download-CV:hover,
-.toggle-see-more:hover,
 .toggle-see-more.active,
 .link-to-github-profile:hover {
   background-color: whitesmoke;
