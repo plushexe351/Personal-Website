@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/527f71ab58.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/527f71ab58.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Personal Website</title>
-
   </head>
   <body>
-    <header id = "home">
-      <h1><a href="#home" id = "developer-name">Ushnish</a></h1>
+    <header>
+      <h1><a href="#" id="developer-name">Ushnish</a></h1>
       <nav class="nav-items">
-        <a href="#" class="nav-item active">Home</a>
-        <a href="#" class="nav-item">About</a>
-        <a href="#" class="nav-item">Skills</a>
-        <a href="#" class="nav-item">Work</a>
-        <a href="#" class="nav-item">Services</a>
-        <a href="#" class="nav-item">Contact</a>
+        <!-- <a href="#" class="nav-item active">Home</a> -->
+        <a href="#" class="nav-item main-section">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#work" class="nav-item">Work</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <button class="download-CV" href="#bio">Download CV</button>
       </nav>
       <div class="hamburg">
         <div class="bar top"></div>
@@ -30,30 +32,354 @@
       <p class="section-title">&lt; about &gt;</p>
       <div class="hero">
         <p class="hero-text">
-          Hi !<br />I am <span id="name"> Ushnish Tapaswi </span><br />
+          Hi ,<br />I am <span id="name"> Ushnish Tapaswi </span><br />
           <span>and I am a</span>
           <br />
           <span class="role"></span>
-          <button type="button" class="Download-CV" href="#bio">
-            Download C.V.<i class="fa fa-arrow-down"></i></button
-        >
+          <button class="download-CV" href="#bio">Download CV</button>
         </p>
-        <img src="images/Subject.png" id="main-image" height="500px" alt="" data-speed="-5" />
-        
+        <img
+          draggable="false"
+          src="assets/images/Subject.png"
+          id="main-image"
+          height="500px"
+          alt=""
+          data-speed="-5"
+        />
       </div>
-      <p class="section-title">&lt; /about &gt;</p>
+      <p class="section-title">&lt;/ about &gt;</p>
+    </section>
+    <section id="skills">
+      <p class="section-title">&lt; skills &gt;</p>
+      <p class="info">Select to show skill</p>
+      <div class="skillsContainer">
+        <span class="cell always active">HTML</span>
+        <span class="cell always active">CSS</span>
+        <span class="cell always active">JavaScript</span>
+        <span class="cell active">PHP</span>
+        <span class="cell">SCSS</span>
+        <span class="cell">ReactJs</span>
+        <span class="cell">NodeJs</span>
+        <span class="cell">Firebase</span>
+        <span class="cell">Photoshop</span>
+      </div>
+      <div class="graphContainer">
+        <div class="skill html show">
+          <p>HTML</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="skill css show">
+          <p>CSS</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="skill javascript show">
+          <p>JavaScript</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="skill php show">
+          <p>PHP</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill scss">
+          <p>SCSS</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill nodejs">
+          <p>NodeJs</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill reactjs">
+          <p>ReactJs</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill firebase">
+          <p>Firebase</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill photoshop">
+          <p>Photoshop</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+      <p class="section-title">&lt;/ skills &gt;</p>
+    </section>
+    <section id="work">
+      <p class="section-title">&lt; work &gt;</p>
+      <div class="projectsContainer">
+        <div class="project etchasketch">
+          <img src="assets/images/etch-a-sketch.png" alt="" />
+          <div class="info">
+            <p class="project-name">Etch-a-Sketch</p>
+            <p class="description">A pixel art making website</p>
+            <div class="skills-used">
+              <div class="cell">HTML</div>
+              <div class="cell">CSS</div>
+              <div class="cell">JavaScript</div>
+            </div>
+            <a
+              class="live-preview"
+              href="https://plushexe351.github.io/Etch-a-Sketch/"
+              target="_blank"
+              rel="noopener"
+              >Live Preview</a
+            >
+            <a
+              class="source-code"
+              href="https://github.com/plushexe351/Etch-a-Sketch"
+              target="_blank"
+              rel="noopener"
+              >Source Code</a
+            >
+            <p class="toggle-see-more">show more</p>
+            <div class="key-features">
+              <strong>Key features</strong>
+              <ul>
+                <li>Fully responsive</li>
+                <li>Multiple pen modes</li>
+                <li>GreyScale mode</li>
+                <li>Eraser mode</li>
+                <li>Change number of cells</li>
+                <li>Custom pen color and background color</li>
+                <li>Enable and disable grid view</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project ipodsimulator">
+          <img src="assets/images/iPodSimulator.png" alt="" />
+          <div class="info">
+            <p class="project-name">iPodSimulator</p>
+            <p class="description">An iPod-like Music Player</p>
+            <div class="skills-used">
+              <div class="cell">HTML</div>
+              <div class="cell">CSS</div>
+              <div class="cell">JavaScript</div>
+            </div>
+            <a
+              class="live-preview"
+              href="https://plushexe351.github.io/iPodSimulator/"
+              target="_blank"
+              rel="noopener"
+              >Live Preview</a
+            >
+            <a
+              class="source-code"
+              href="https://github.com/plushexe351/iPodSimulator"
+              target="_blank"
+              rel="noopener"
+              >Source Code</a
+            >
+            <p class="toggle-see-more">show more</p>
+
+            <div class="key-features">
+              <strong>Key features</strong>
+              <ul>
+                <li>Fully responsive</li>
+
+                <li>Sleep / Wake with animated bootscreen</li>
+                <li>
+                  Play and browse through songs with an iPod like experience
+                </li>
+                <li>Play/Pause song</li>
+                <li>Use buttons to navigate to Next song, prev song, menu</li>
+                <li>
+                  There is Keyboard support as well, check the how-to-use panel
+                  in the website for key bindings
+                </li>
+                <li>Custom pen color and background color</li>
+                <li>
+                  iPod sleeps when user's focus goes away from browser or
+                  changes tab
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project flappybird">
+          <img src="assets/images/flappyBird.png" alt="" />
+          <div class="info">
+            <p class="project-name">FlappyBird</p>
+            <p class="description">Flappy Bird game</p>
+            <div class="skills-used">
+              <div class="cell">HTML</div>
+              <div class="cell">HTML canvas</div>
+              <div class="cell">CSS</div>
+              <div class="cell">JavaScript</div>
+            </div>
+            <a
+              class="live-preview"
+              href="https://plushexe351.github.io/FlappyBird/"
+              target="_blank"
+              rel="noopener"
+              >Live Preview</a
+            >
+            <a
+              class="source-code"
+              href="https://github.com/plushexe351/FlappyBird"
+              target="_blank"
+              rel="noopener"
+              >Source Code</a
+            >
+            <p class="toggle-see-more">show more</p>
+
+            <div class="key-features">
+              <strong>Key features</strong>
+              <ul>
+                <li>Responsive</li>
+                <li>Keyboard support</li>
+                <li>Touch Screen support</li>
+                <!-- <li>Eraser mode</li>
+                <li>Change number of cells</li>
+                <li>Custom pen color and background color</li>
+                <li>Enable and disable grid view</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project calculator">
+          <img src="assets/images/BigBlackCalculator.png" alt="" />
+          <div class="info">
+            <p class="project-name">BigBlackCalculator</p>
+            <p class="description">Calculator App</p>
+            <div class="skills-used">
+              <div class="cell">HTML</div>
+              <div class="cell">CSS</div>
+              <div class="cell">JavaScript</div>
+            </div>
+            <a
+              class="live-preview"
+              href="https://plushexe351.github.io/BigBlackCalculator/"
+              target="_blank"
+              rel="noopener"
+              >Live Preview</a
+            >
+            <a
+              class="source-code"
+              href="https://github.com/plushexe351/BigBlackCalculator"
+              target="_blank"
+              rel="noopener"
+              >Source Code</a
+            >
+            <p class="toggle-see-more">show more</p>
+
+            <div class="key-features">
+              <strong>Key features</strong>
+              <ul>
+                <li>Fully responsive</li>
+                <li>Dark and Light Theme</li>
+                <li>All basic calculations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project rockpaperscissor">
+          <img src="assets/images/RockPaperScissor.png" alt="" />
+          <div class="info">
+            <p class="project-name">RockPaperScissor</p>
+            <p class="description">Rock Paper Scissor game</p>
+            <div class="skills-used">
+              <div class="cell">HTML</div>
+              <div class="cell">CSS</div>
+              <div class="cell">JavaScript</div>
+            </div>
+            <a
+              class="live-preview"
+              href="https://plushexe351.github.io/RockPaperScissors/"
+              target="_blank"
+              rel="noopener"
+              >Live Preview</a
+            >
+            <a
+              class="source-code"
+              href="https://github.com/plushexe351/RockPaperScissors"
+              target="_blank"
+              rel="noopener"
+              >Source Code</a
+            >
+            <p class="toggle-see-more">show more</p>
+
+            <div class="key-features">
+              <strong>Key features</strong>
+              <ul>
+                <li>Fully responsive</li>
+                <li>Update Score</li>
+                <li>Show game status</li>
+                <li>Restart game</li>
+                <li>
+                  iPod sleeps when user's focus goes away from browser or
+                  changes tab
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="link-to-github-profile"
+        href="https://github.com/plushexe351"
+        target="_blank"
+        rel="noopener"
+        >See more of my work in GitHub <span class="fa fa-chevron-right"></span
+      ></a>
+      <p class="section-title">&lt;/ work &gt;</p>
+    </section>
+    <section id="contact">
+      <p class="section-title">&lt;/ contact &gt;</p>
+
+      <a
+        href="https://github.com/plushexe351"
+        class="github"
+        target="_blank"
+        rel="noopener"
+        ><span class="fa fa-github"></span>GitHub</a
+      >
+      <a href="mailto:geekyushnish@gmail.com" class="gmail"
+        ><span class="fa fa-envelope"></span>Gmail</a
+      >
+      <a
+        href="https://twitter.com/iam_ushnish"
+        class="twitter"
+        target="_blank"
+        rel="noopener"
+        ><span class="fa fa-twitter"></span>Twitter</a
+      >
+      <!-- <a href="" class="instagram">
+        <span class="fa-brands fa-instagram"></span>Instagram
+      </a> -->
+      <a href="tel:+919083142736" class="phone"
+        ><span class="fa fa-phone"></span>Phone
+        <span class="contact-number">+91 9083142736</span></a
+      >
+      <p class="section-title">&lt;/ contact &gt;</p>
     </section>
     <script src="script.js"></script>
-  
-// const layer = document.querySelector("#main-image");
-// document.addEventListener("mousemove",parallax);
-// function parallax(e){
-//   const speed = layer.getAttribute('data-speed');
-//   const x = (window.innerWidth - e.pageX*speed)/100;
-//   const y = (window.innerHeight - e.pageY*speed)/100;
 
-//   layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-// }
-
+    // const layer = document.querySelector("#main-image"); //
+    document.addEventListener("mousemove",parallax); // function parallax(e){ //
+    const speed = layer.getAttribute('data-speed'); // const x =
+    (window.innerWidth - e.pageX*speed)/100; // const y = (window.innerHeight -
+    e.pageY*speed)/100; // layer.style.transform = `translateX(${x}px)
+    translateY(${y}px)`; // }
   </body>
 </html>
