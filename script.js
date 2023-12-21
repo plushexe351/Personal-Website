@@ -94,7 +94,8 @@ toggleSeeMore.forEach(toggle => {
         console.log('clicked');
         const hiddenSection = toggle.nextElementSibling;
         toggle.classList.toggle('active');
-        hiddenSection.classList.toggle('hidden');
+        if (toggle.classList.contains('active'))
+            hiddenSection.classList.toggle('hidden');
     })
 })
 
