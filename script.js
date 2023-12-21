@@ -127,7 +127,7 @@ skillItems.forEach(item => {
                 if (skill.classList.toString().toLowerCase().includes(item.textContent.toLowerCase())) {
                     console.log(skill.classList[1]);
                     if (item.classList.contains('active')) {
-                        const processedTop = window.innerWidth > 768 ? skillSection.scrollHeight : skillSection.scrollHeight + 50;
+                        const processedTop = window.innerWidth > 768 ? skillSection.scrollHeight : skillSection.scrollHeight + 200;
                         window.scrollTo({
                             top: processedTop,
                             behavior: 'smooth'
