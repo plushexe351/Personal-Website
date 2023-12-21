@@ -402,6 +402,10 @@ section {
   margin: 1rem auto;
 }
 
+.toggle-see-more.hidden {
+  display: none;
+}
+
 .key-features.hidden {
   height: 0;
   opacity: 0;
@@ -545,9 +549,9 @@ section {
     justify-content: center;
   }
 
-  /* .toggle-see-more {
+  .toggle-see-more.show {
     display: block;
-  } */
+  }
 
 
   nav .download-CV {

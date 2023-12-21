@@ -74,20 +74,20 @@ window.addEventListener('scroll', () => {
 })
 
 
-// window.addEventListener('resize', () => {
 
-//     if (window.innerWidth < 900) {
-//         keyFeatures.forEach(each => {
-//             each.classList.add('hidden');
-//         })
 
-//     }
-//     else {
-//         keyFeatures.forEach(each => {
-//             each.classList.remove('hidden');
-//         })
-//     }
-// })
+
+if (window.innerWidth < 900) {
+    toggleSeeMore.forEach(toggle => {
+        toggle.classList.add('show');
+    })
+}
+else
+    toggleSeeMore.forEach(toggle => {
+        toggle.classList.add('hidden');
+    })
+
+
 
 toggleSeeMore.forEach(toggle => {
     toggle.addEventListener('click', () => {
