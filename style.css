@@ -264,9 +264,9 @@ section {
 
 .graphContainer p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-block: 1rem;
-  font-family: "poppins", Helvetica, sans-serif;
+  font-family: "dotty", Helvetica, sans-serif;
 }
 
 .graphContainer>div {
@@ -352,32 +352,27 @@ section {
 .project {
   width: 100%;
   max-height: max-content;
+  /* background-color: rgb(21, 21, 21); */
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px solid rgba(29, 29, 2929 */
   border-radius: 0.5rem;
   overflow: hidden;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-block: 2rem;
-  /* background-color: rgb(29, 29, 29); */
   padding: 1rem;
   transition: 0.5s ease;
-  /* box-shadow: 0 0 3rem rgba(255, 255, 255, 0.150); */
 }
 
 .project.hidden {
-  /* display: none; */
   opacity: 0;
   transform: translate(0, 12rem)scale(0.9);
 }
 
 .project .info {
-  /* background-color: pink; */
   height: 100%;
   padding: 0.5rem;
-  flex: 1;
-  min-width: 400px;
+  width: 480px;
 }
 
 .project-name {
@@ -390,7 +385,7 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: 0.3rem;
   object-fit: cover;
-  width: 50%;
+  width: 40%;
   max-width: 100%;
 }
 
@@ -483,8 +478,8 @@ section {
   max-width: 80vw;
   border-radius: 0.2rem;
   color: white;
-  font-size: 3rem;
-  font-family: dotty;
+  font-size: 2rem;
+  font-family: poppins;
   margin-block: 0.5rem;
   cursor: pointer;
 }
@@ -527,6 +522,9 @@ section {
 } */
 
 .phone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   transition: 0.8s ease;
   background-image: linear-gradient(45deg, rgb(0, 243, 0), #08851b);
   transition-delay: 0.4s;
@@ -534,12 +532,17 @@ section {
 
 .contact-number {
   font-family: "source code pro";
+  margin-inline: 1rem;
   font-size: 1.5rem;
 }
 
 @media only screen and (max-width:900px) {
   #main-image {
     height: 40vh;
+  }
+
+  .project {
+    justify-content: center;
   }
 
   .toggle-see-more {
@@ -637,7 +640,7 @@ section {
 @media only screen and (max-width:700px) {
   #contact>a {
     padding: 1rem 2rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 

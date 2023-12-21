@@ -1,6 +1,7 @@
 # Personal-Website
-My Personal Portfolio Website made using HTML, CSS and JavaScript.
 
-## Note
+My Personal Portfolio Website made using HTML, CSS and JavaScript containing my about, skills, projects, CV, and socials.
 
-This portfolio website is still a work in progress, and is not perfect. 
+## Preview
+
+[Live Preview](https://plushexe351.github.io/Personal-Website)
