@@ -94,10 +94,11 @@ toggleSeeMore.forEach(toggle => {
         console.log('clicked');
         const hiddenSection = toggle.nextElementSibling;
         toggle.classList.toggle('active');
-        if (!toggle.classList.contains('active'))
-            hiddenSection.classList.add('hidden');
-        else
-            hiddenSection.classList.remove('hidden');
+        hiddenSection.classList.toggle('hidden');
+        // if (!toggle.classList.contains('active'))
+        //     hiddenSection.classList.add('hidden');
+        // else
+        //     hiddenSection.classList.remove('hidden');
     })
 })
 
