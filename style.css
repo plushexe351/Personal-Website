@@ -361,9 +361,9 @@ section {
   /* background-color: rgb(21, 21, 21); */
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-block: 2rem;
   padding: 1rem;
@@ -378,7 +378,9 @@ section {
 .project .info {
   height: 100%;
   padding: 0.5rem;
-  width: 480px;
+  min-width: 300px;
+  max-width: 400px;
+  /* border: 1px solid red; */
 }
 
 .project-name {
@@ -391,8 +393,10 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: 0.3rem;
   object-fit: cover;
-  width: 40%;
-  max-width: 100%;
+  /* width: 40%; */
+  margin-bottom: 1rem;
+  min-width: 250px;
+  max-width: 400px;
 }
 
 .key-features {
