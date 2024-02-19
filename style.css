@@ -47,7 +47,7 @@ header {
 }
 
 nav {
-  background-color: rgba(40, 40, 40, 0.5);
+  background-color: rgba(65, 65, 65, 0.5);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
   /* padding: 0.5rem; */
@@ -516,6 +516,7 @@ header .download-CV {
   max-width: 80vw;
   border-radius: 0.2rem;
   color: white;
+  font-size: 2rem;
   font-family: poppins;
   margin-block: 0.5rem;
   cursor: pointer;
@@ -611,7 +612,7 @@ header .download-CV {
   }
 
   nav {
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: transparent;
     display: block;
     height: 0;
     width: 100%;
@@ -681,6 +682,10 @@ header .download-CV {
     font-size: 1.5rem;
   }
 
+  .contact-number {
+    font-size: 1rem;
+  }
+
   .cell {
     font-size: 0.8rem;
   }
@@ -699,8 +704,9 @@ header .download-CV {
     font-size: 3rem;
   }
 
-  .skills-used div {
-    /* font-size: 0.9rem; */
+  #contact>a {
+    padding: 1rem 1rem;
+    font-size: 1rem;
   }
 
   .main .hero-text,
