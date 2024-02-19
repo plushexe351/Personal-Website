@@ -125,7 +125,7 @@ skillItems.forEach(item => {
         if (!item.classList.contains('always')) {
             item.classList.toggle('active');
             skills.forEach(skill => {
-                if (skill.classList.toString().toLowerCase().includes(item.textContent.toLowerCase())) {
+                if (skill.classList.toString().toLowerCase().trim().includes(item.textContent.toLowerCase().trim())) {
                     console.log(skill.classList[1]);
                     if (item.classList.contains('active')) {
                         const processedTop = window.innerWidth > 768 ? skillSection.scrollHeight : skillSection.scrollHeight + 200;

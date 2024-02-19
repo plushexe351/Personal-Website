@@ -50,7 +50,6 @@ nav {
   background-color: rgba(65, 65, 65, 0.5);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
-  /* padding: 0.5rem; */
   border-radius: 1rem;
   display: flex;
   overflow-x: hidden;
@@ -105,7 +104,6 @@ nav:hover>a:not(:hover) {
 
 section {
   position: relative;
-  /* overflow: scroll; */
   padding-block: 5rem 2rem;
   min-height: 100vh;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.519);
@@ -152,7 +150,6 @@ section {
   top: 0;
   width: 800px;
   padding-inline: 2rem;
-  /* border: 1px solid red; */
   overflow: hidden;
   font-family: "dotty", "poppins", "sans-serif";
   font-size: 5rem;
@@ -334,7 +331,7 @@ header .download-CV {
   width: 70%;
 }
 
-.scss .progress {
+.sass .progress {
   width: 75%;
 }
 
@@ -360,7 +357,7 @@ header .download-CV {
 
 .highlight {
   transform: scale(1.05);
-  filter: brightness(2);
+  filter: brightness(5);
 }
 
 .skill {
