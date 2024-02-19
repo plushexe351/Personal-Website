@@ -118,9 +118,9 @@ section {
 
 #skills {
   top: 100vh;
-  background-color: rgba(31, 31, 31, 0.56);
-  backdrop-filter: blur(3rem);
-  -webkit-backdrop-filter: blur(3rem);
+  background-color: rgba(72, 72, 72, 0.26);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
 }
 
 #work {
