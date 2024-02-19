@@ -113,7 +113,7 @@ hamburg.addEventListener('click', () => {
 })
 
 var typed = new Typed('.role', {
-    strings: ["Web Developer", "PHP Developer"],
+    strings: ["React Developer", "Frontend Developer", "Python Developer"],
     typeSpeed: 60,
     backspeed: 150,
     loop: true

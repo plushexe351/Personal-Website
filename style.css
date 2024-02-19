@@ -14,6 +14,10 @@ html {
   background-color: black;
 }
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +34,8 @@ header {
   position: fixed;
   -webkit-backdrop-filter: blur(1rem);
   backdrop-filter: blur(1rem);
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 5rem;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -45,6 +47,11 @@ header {
 }
 
 nav {
+  background-color: rgba(40, 40, 40, 0.5);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+  /* padding: 0.5rem; */
+  border-radius: 1rem;
   display: flex;
   overflow-x: hidden;
 }
@@ -111,7 +118,9 @@ section {
 
 #skills {
   top: 100vh;
-  background-color: rgb(29, 29, 29);
+  background-color: rgba(31, 31, 31, 0.56);
+  backdrop-filter: blur(3rem);
+  -webkit-backdrop-filter: blur(3rem);
 }
 
 #work {
@@ -134,7 +143,7 @@ section {
   flex-wrap: wrap;
   padding-inline: 2rem;
   gap: 50px;
-  justify-content: space-around;
+  justify-content: center;
   height: 70vh;
 }
 
@@ -142,17 +151,19 @@ section {
   position: relative;
   top: 0;
   width: 800px;
+  padding-inline: 2rem;
+  /* border: 1px solid red; */
   overflow: hidden;
   font-family: "dotty", "poppins", "sans-serif";
   font-size: 5rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   animation: textappear 0.5s ease;
 }
 
 .section-title {
   font-family: "source code pro", "sans-serif";
   margin-inline: 5rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   color: rgba(255, 255, 255, 0.3);
   font-size: 1rem;
 }
@@ -161,9 +172,11 @@ section {
 .role {
   position: relative;
   font-size: 5rem;
-  color: blueviolet;
+  color: magenta;
   /* text-shadow: 0.2rem 0.2rem rgb(98, 0, 98); */
 }
+
+
 
 #main-image {
   /* filter: brightness(0.7) contrast(1.115); */
@@ -188,6 +201,10 @@ section {
   border-radius: 0.5rem;
   transition: 0.2s ease;
   cursor: pointer;
+}
+
+header .download-CV {
+  border: none;
 }
 
 .main .download-CV {
@@ -229,10 +246,11 @@ section {
 
 .cell {
   font-family: "poppins", sans-serif;
-  border-radius: 0.3rem;
-  background-color: rgb(73, 73, 73);
+  border-radius: 1rem;
+  background-color: rgb(35, 35, 35);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
-  padding: 0.5rem 1rem;
+  border: 1px solid rgba(67, 67, 67, 0.379);
+  padding: 0.3rem 1rem;
   cursor: pointer;
 }
 
@@ -259,14 +277,14 @@ section {
   padding: 2rem;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
   min-height: 400px;
 }
 
 .graphContainer p {
   color: white;
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-block: 1rem;
   font-family: "dotty", Helvetica, sans-serif;
 }
@@ -278,18 +296,20 @@ section {
 
 .progress-bar {
   border-radius: 0.3rem;
-  width: 100%;
-  height: 2rem;
+  flex: 1;
+  height: 1.8rem;
   overflow: hidden;
-  background-color: rgb(58, 58, 58);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  background-color: rgb(37, 37, 37);
+  /* border: 1px solid rgb(43, 43, 43); */
+  background-color: rgba(48, 48, 48, 0.397);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
   transition: 0.4s ease;
 }
 
 .progress {
   width: 0%;
   height: 100%;
-  background-image: linear-gradient(rgb(201, 143, 255), blueviolet);
+  background-image: linear-gradient(blueviolet, magenta);
   transition: 0.6s ease-in-out;
 }
 
@@ -315,23 +335,23 @@ section {
 }
 
 .scss .progress {
-  width: 55%;
+  width: 75%;
 }
 
 .nodejs .progress {
-  width: 40%;
+  width: 50%;
 }
 
 .reactjs .progress {
-  width: 35%;
+  width: 65%;
 }
 
 .firebase .progress {
-  width: 30%;
+  width: 80%;
 }
 
 .photoshop .progress {
-  width: 45%;
+  width: 55%;
 }
 
 .progress.hidden {
@@ -363,7 +383,7 @@ section {
   flex-wrap: wrap;
   /* border-radius: 0.5rem; */
   overflow: hidden;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-block: 2rem;
   padding: 1rem;
@@ -390,16 +410,20 @@ section {
 }
 
 .project img {
-  border: 1px solid rgba(255, 255, 255, 0.32);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border-radius: 0.3rem;
   object-fit: cover;
+  object-position: center;
   /* width: 40%; */
   margin-bottom: 1rem;
-  min-width: 250px;
-  max-width: 400px;
+  min-width: 200px;
+  width: 600px;
+  /* max-height: 600px; */
+  max-width: 90vw;
 }
 
 .key-features {
+  color: rgb(201, 201, 201);
   height: max-content;
   overflow: hidden;
   padding: 1rem;
@@ -421,9 +445,10 @@ section {
 }
 
 .key-features ul {
-  background-color: rgb(29, 29, 29);
+  border: 1px solid rgb(37, 37, 37);
+  background-color: rgb(14, 14, 14);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   margin: 1rem auto 0 auto;
   width: 80%;
   overflow: hidden;
@@ -433,7 +458,7 @@ section {
 .key-features li {
   padding: 0.5rem 1rem;
   list-style: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(139, 139, 139, 0.153);
   border-radius: 0;
   cursor: pointer;
 }
@@ -458,7 +483,7 @@ section {
 .live-preview,
 .source-code {
   text-decoration: none;
-  color: blueviolet;
+  color: magenta;
   margin: 0rem auto;
   padding-inline: 1rem;
 }
@@ -491,7 +516,6 @@ section {
   max-width: 80vw;
   border-radius: 0.2rem;
   color: white;
-  font-size: 2rem;
   font-family: poppins;
   margin-block: 0.5rem;
   cursor: pointer;
@@ -587,6 +611,7 @@ section {
   }
 
   nav {
+    background-color: rgba(0, 0, 0, 0.37);
     display: block;
     height: 0;
     width: 100%;
@@ -655,6 +680,18 @@ section {
     padding: 1rem 2rem;
     font-size: 1.5rem;
   }
+
+  .cell {
+    font-size: 0.8rem;
+  }
+
+  .graphContainer {
+    gap: 0;
+  }
+
+  .progress-bar {
+    height: 1.5rem;
+  }
 }
 
 @media only screen and (max-width:400px) {
@@ -663,7 +700,7 @@ section {
   }
 
   .skills-used div {
-    font-size: 0.7rem;
+    /* font-size: 0.9rem; */
   }
 
   .main .hero-text,
