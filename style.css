@@ -200,13 +200,6 @@ section {
   filter: invert(1);
 }
 
-#main-image {
-  /* filter: brightness(0.7) contrast(1.115); */
-  /* display: none; */
-  /* position: absolute;
-  bottom: 0; */
-  /* right: 5vw; */
-}
 
 .download-CV,
 .toggle-see-more,
@@ -494,7 +487,7 @@ header .download-CV {
   /* width: 40%; */
   margin-bottom: 1rem;
   min-width: 200px;
-  width: 400px;
+  width: 500px;
   /* max-height: 600px; */
   max-width: 90vw;
 }
