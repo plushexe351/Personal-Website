@@ -752,7 +752,7 @@ header .download-CV {
   }
 
   #social-links {
-    bottom: 3rem;
+    top: 7rem;
   }
 
   #social-links>* {
