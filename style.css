@@ -247,7 +247,7 @@ header .download-CV {
   gap: 1rem;
 } */
 .main .download-CV {
-  letter-spacing: 2px;
+  /* letter-spacing: 1px; */
   display: none;
   margin: 0 auto;
 }
