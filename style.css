@@ -693,6 +693,9 @@ header .download-CV {
 }
 
 @media only screen and (max-width:900px) {
+  nav a.active::after {
+    display: none;
+  }
 
   .certificates {
     justify-content: start;
