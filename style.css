@@ -382,15 +382,15 @@ header .download-CV {
 }
 
 .python .progress {
-  width: 70%;
+  width: 80%;
 }
 
 .sass .progress {
-  width: 75%;
+  width: 85%;
 }
 
 .nodejs .progress {
-  width: 50%;
+  width: 70%;
 }
 
 .mysql .progress {
@@ -398,7 +398,7 @@ header .download-CV {
 }
 
 .reactjs .progress {
-  width: 65%;
+  width: 75%;
 }
 
 .firebase .progress {
