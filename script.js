@@ -161,6 +161,6 @@ skillItems.forEach(item => {
 skillnames.forEach(skill => {
     const skillLogo = document.createElement('img')
     skillLogo.classList.add('skill-logo')
-    skillLogo.src = `assets/images/skill-logos/${skill.textContent.toLowerCase()}-logo.${"png" || "webp"}`
+    skillLogo.src = `assets/images/skill-logos/${skill.textContent?.toLocaleLowerCase()}-logo.png`
     skill.append(skillLogo)
 })
