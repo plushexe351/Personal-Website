@@ -5,6 +5,7 @@ const nav = document.querySelector('header nav');
 const navLinks = document.querySelectorAll('.nav-item')
 const skillItems = document.querySelectorAll('.skillsContainer > .cell');
 const skills = document.querySelectorAll('.graphContainer > .skill');
+const skillnames = document.querySelectorAll('.graphContainer > .skill > p')
 const skillSection = document.getElementById('skills');
 const progressBars = document.querySelectorAll('.progress');
 const projects = document.querySelectorAll('.project');
@@ -157,4 +158,9 @@ skillItems.forEach(item => {
     })
 })
 
-
+skillnames.forEach(skill => {
+    const skillLogo = document.createElement('img')
+    skillLogo.classList.add('skill-logo')
+    skillLogo.src = `assets/images/skill-logos/${skill.textContent}-logo.${"png" || "webp"}`
+    skill.append(skillLogo)
+})

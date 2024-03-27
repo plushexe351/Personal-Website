@@ -240,58 +240,20 @@ header .download-CV {
   color: black;
 }
 
-.skill-domains {
-  padding-inline: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-block: 1rem;
-}
 
-.domain {
-  font-family: poppins;
-  overflow: hidden;
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: 400;
-  flex-direction: column;
-  height: 180px;
-  width: calc(500px / 2 - 1rem);
-  color: white;
-  background-color: rgba(255, 255, 255, 0.065);
-  border-radius: 1rem;
-  box-shadow: 2px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-  /* border-bottom: 4px solid gray; */
-}
 
-.domain:first-of-type {
-  width: 500px;
-}
-
-.domain>* {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  text-align: center;
-}
-
-.domain>div {
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.028);
-}
-
-.domain:hover {
-  outline: 1px solid white;
-}
 
 .info {
   text-align: center;
   color: rgb(147, 147, 147);
   font-family: "poppins";
+}
+
+.skill-logo {
+  margin-inline: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 35px;
 }
 
 .skillsContainer,
@@ -412,6 +374,10 @@ header .download-CV {
   width: 50%;
 }
 
+.mysql .progress {
+  width: 70%;
+}
+
 .reactjs .progress {
   width: 65%;
 }
@@ -437,8 +403,72 @@ header .download-CV {
   display: none;
 }
 
+.skill>p {
+  display: flex;
+  align-items: center;
+}
+
+
 .skill.show {
   display: unset;
+}
+
+.skill.reactjs img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.certifications {
+  padding: 2rem;
+  width: 100vw;
+
+}
+
+.certifications h2 {
+  font-weight: 600;
+  color: white;
+  font-size: 3rem;
+  font-family: dotty;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.certifications .fa-circle-check {
+  font-size: 1.5rem;
+  color: rgb(78, 255, 78);
+}
+
+.certificates {
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  overflow: scroll;
+  align-items: center;
+}
+
+.certificate img {
+  height: 30vh;
+  border-radius: 0.4rem;
+  outline: 2px solid lightgray;
+  outline-offset: 0.3rem;
+}
+
+.certificate p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-family: poppins;
+  color: lightgray;
 }
 
 .projectsContainer {
@@ -646,6 +676,10 @@ header .download-CV {
 
 @media only screen and (max-width:900px) {
 
+  .certificates {
+    justify-content: start;
+  }
+
   #main-image {
     height: 40vh;
   }
@@ -782,7 +816,7 @@ header .download-CV {
   }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:570px) {
 
   .role,
   .location {
