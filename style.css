@@ -244,6 +244,9 @@ header .download-CV {
 } */
 .main .download-CV {
   /* letter-spacing: 1px; */
+  text-decoration: none;
+  font-family: poppins;
+  width: max-content;
   display: none;
   margin: 0 auto;
 }
