@@ -116,13 +116,17 @@ skillItems.forEach((item) => {
         ) {
           console.log(skill.classList[1]);
           if (item.classList.contains("active")) {
-            const processedTop =
-              window.innerWidth > 768
-                ? skillSection.scrollHeight - 100
-                : skillSection.scrollHeight;
-            window.scrollTo({
-              top: processedTop,
+            // const processedTop =
+            //   window.innerWidth > 768
+            //     ? skillSection.scrollHeight - 100
+            //     : skillSection.scrollHeight;
+            // window.scrollTo({
+            //   top: processedTop,
+            //   behavior: "smooth",
+            // });
+            item.scrollIntoView({
               behavior: "smooth",
+              block: "start", // This aligns the top of the element to the top of the visible area
             });
           }
           skill.classList.toggle("show");
