@@ -55,7 +55,6 @@ nav {
   overflow-x: hidden;
 }
 
-
 header a {
   color: white;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
@@ -73,8 +72,6 @@ nav a {
   transition: 0.1s ease;
 }
 
-
-
 nav a.active::after {
   content: "";
   position: absolute;
@@ -85,7 +82,7 @@ nav a.active::after {
   border-bottom: 1px solid magenta;
 }
 
-nav:hover>a:not(:hover) {
+nav:hover > a:not(:hover) {
   opacity: 0.5;
 }
 
@@ -148,7 +145,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(12, 12, 12)
+  background-color: rgb(12, 12, 12);
 }
 
 .hero {
@@ -202,7 +199,7 @@ section {
   right: 3rem;
 }
 
-#social-links>* {
+#social-links > * {
   display: block;
   margin-block: 1rem;
 }
@@ -214,7 +211,6 @@ section {
 #social-links a:nth-of-type(1) img {
   filter: invert(1);
 }
-
 
 .download-CV,
 .toggle-see-more,
@@ -258,10 +254,6 @@ header .download-CV {
   background-color: whitesmoke;
   color: black;
 }
-
-
-
-
 
 .info {
   text-align: center;
@@ -340,7 +332,7 @@ header .download-CV {
   font-family: "dotty", Helvetica, sans-serif;
 }
 
-.graphContainer>div {
+.graphContainer > div {
   width: 600px;
   padding-inline: 1rem;
 }
@@ -363,7 +355,6 @@ header .download-CV {
   background-image: linear-gradient(blueviolet, magenta);
   transition: 0.6s ease-in-out;
 }
-
 
 .html .progress {
   width: 70%;
@@ -397,6 +388,17 @@ header .download-CV {
   width: 70%;
 }
 
+.mongodb .progress {
+  width: 60%;
+}
+
+.flask .progress {
+  width: 69%;
+}
+
+.expressjs .progress {
+  width: 70%;
+}
 .reactjs .progress {
   width: 75%;
 }
@@ -422,11 +424,10 @@ header .download-CV {
   display: none;
 }
 
-.skill>p {
+.skill > p {
   display: flex;
   align-items: center;
 }
-
 
 .skill.show {
   display: unset;
@@ -449,7 +450,6 @@ header .download-CV {
 .certifications {
   padding: 2rem;
   width: 100vw;
-
 }
 
 .certifications h2 {
@@ -510,7 +510,7 @@ header .download-CV {
 
 .project.hidden {
   opacity: 0;
-  transform: translate(0, 12rem)scale(0.9);
+  transform: translate(0, 12rem) scale(0.9);
 }
 
 .project .info {
@@ -627,7 +627,7 @@ header .download-CV {
   }
 }
 
-#contact>a {
+#contact > a {
   text-decoration: none;
   padding: 1.5rem 2rem;
   width: 500px;
@@ -640,12 +640,12 @@ header .download-CV {
   cursor: pointer;
 }
 
-#contact>a:hover {
+#contact > a:hover {
   transition: 0.2s ease;
   transform: scale(1.05);
 }
 
-#contact>a.hidden {
+#contact > a.hidden {
   opacity: 0;
   transform: translate(0, 12rem);
 }
@@ -655,21 +655,34 @@ header .download-CV {
   margin-inline: 1rem;
 }
 
-#contact>.github {
+#contact > .github {
   color: black;
   transition: 0.2s ease;
   background-image: linear-gradient(45deg, #e1e1e1 20%, #dfdfdf 40%);
-
 }
 
 .gmail {
   transition: 0.4s ease;
-  background-image: linear-gradient(45deg, #3e65cf, #c71610, #f2a60c, #3b60c4, #08851b);
+  background-image: linear-gradient(
+    45deg,
+    #3e65cf,
+    #c71610,
+    #f2a60c,
+    #3b60c4,
+    #08851b
+  );
 }
 
 .twitter {
   transition: 0.6s ease;
-  background-image: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+  background-image: linear-gradient(
+    45deg,
+    #66757f,
+    #00acee,
+    #36d8ff,
+    #f5f8fa,
+    #ffffff
+  );
 }
 
 /* .instagram {
@@ -692,7 +705,7 @@ header .download-CV {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width: 900px) {
   nav a.active::after {
     display: none;
   }
@@ -713,7 +726,6 @@ header .download-CV {
     display: block;
   }
 
-
   nav .download-CV {
     display: none;
   }
@@ -725,7 +737,6 @@ header .download-CV {
 
   header {
     padding-top: 1rem;
-
   }
 
   .main .hero-text {
@@ -749,7 +760,7 @@ header .download-CV {
     height: 100vh;
   }
 
-  header.active>nav {
+  header.active > nav {
     height: 100vh;
   }
 
@@ -796,7 +807,7 @@ header .download-CV {
   }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width: 700px) {
   .main .hero-text {
     font-size: 0.9rem;
   }
@@ -810,12 +821,12 @@ header .download-CV {
     top: 7rem;
   }
 
-  #social-links>* {
+  #social-links > * {
     display: inline-block;
     margin-inline: 0.3rem;
   }
 
-  #contact>a {
+  #contact > a {
     padding: 1rem 2rem;
     font-size: 1.5rem;
   }
@@ -837,20 +848,19 @@ header .download-CV {
   }
 }
 
-@media only screen and (max-width:570px) {
-
+@media only screen and (max-width: 570px) {
   .role,
   .location {
     font-size: 3.5rem;
   }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width: 400px) {
   .project-name {
     font-size: 3rem;
   }
 
-  #contact>a {
+  #contact > a {
     padding: 1rem 1rem;
     font-size: 1rem;
   }
